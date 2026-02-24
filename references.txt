@@ -1,0 +1,2 @@
+https://medium.com/podiihq/understanding-rails-routes-and-restful-design-a192d64cbbb5
+https://guides.rubyonrails.org/action_controller_overview.html

@@ -12,4 +12,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  root to: "kittens#index"  #kittens controller, index action (method)
+
+  get "/posts", to: "posts#index", as: :posts
+  get "/posts/new", to: "posts#new", as: :new_post
+  get "/posts/:id", to: "posts#show", as: :post
+  post "/posts", to: "posts#create"  # usually a submitted form
+  get "/posts/:id/edit", to: "posts#edit", as: :edit_post
+  put "/posts/:id", to: "posts#update" # usually a submitted form
+  delete "/posts/:id", to: "posts#destroy"
+
+  # resources :posts, only: [:index, :show, :edit]
+  # resources :users, except: [:index]
 end
