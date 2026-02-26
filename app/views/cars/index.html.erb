@@ -4,6 +4,8 @@
 
 <h1>Cars</h1>
 
+<%= image_tag("car.jpg", height: "150") %>
+
 <div id="cars">
   <% @cars.each do |car| %>
     <%= render car %>
@@ -11,6 +13,7 @@
       <%= link_to "Show this car", car %>
     </p>
   <% end %>
+  <%# this is to display all cars <%= render @cars %>
 </div>
 
 <%= link_to "New car", new_car_path %>
