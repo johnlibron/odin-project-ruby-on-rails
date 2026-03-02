@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root to: "kittens#index"  #kittens controller, index action (method)
+  root to: "kittens#index"  # kittens controller, index action (method)
 
   get "/posts", to: "posts#index", as: :posts
   get "/posts/new", to: "posts#new", as: :new_post
@@ -24,4 +24,6 @@ Rails.application.routes.draw do
 
   # resources :posts, only: [:index, :show, :edit]
   # resources :users, except: [:index]
+
+  get "/search", to: "cars#search", as: :search
 end

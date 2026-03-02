@@ -17,3 +17,11 @@
 </div>
 
 <%= link_to "New car", new_car_path %>
+
+<%= form_with(url: "/search", method: "get", data: { turbo: false} ) do %>
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<h1>Search results for: <%= @query %></h1>

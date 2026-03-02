@@ -57,6 +57,16 @@ class CarsController < ApplicationController
     end
   end
 
+  # GET /cars/search
+  def search
+    puts "Search query: #{params[:query]}"
+    @query = params[:query]
+
+    respond_to do |format|
+      format.html { redirect_to cars_path(query: @query), status: :see_other }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_car

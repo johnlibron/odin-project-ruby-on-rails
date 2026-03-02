@@ -4,7 +4,11 @@
 
 <div>
   <%= link_to "Edit this car", edit_car_path(@car) %> |
-  <%= link_to "Back to cars", cars_path %>
+  <%= link_to "Back to cars", cars_path %> |
 
-  <%= button_to "Destroy this car", @car, method: :delete %>
+  <%= link_to "Edit this car v2", edit_car_path(@car), data: { turbo_action: "replace" } %>
+
+  <%= button_to "Destroy this car", @car, method: :delete %> |
+  <%= link_to "Delete this car v2", car_path(@car), data: { turbo_method: "delete" }  %>
+
 </div>
