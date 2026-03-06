@@ -4,4 +4,11 @@ class ApplicationController < ActionController::Base
 
   # Changes to the importmap will invalidate the etag for HTML responses
   stale_when_importmap_changes
+
+  before_action :do_something_cool
+
+  private
+    def do_something_cool
+      puts "Doing something cool!---------------------------------------------------------------------------------------------------------------------------------------"
+    end
 end

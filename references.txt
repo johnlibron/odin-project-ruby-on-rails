@@ -9,6 +9,13 @@ https://guides.rubyonrails.org/asset_pipeline.html
 https://turbo.hotwired.dev/handbook/introduction
 https://guides.rubyonrails.org/form_helpers.html
 https://guides.rubyonrails.org/active_record_validations.html#displaying-validation-errors-in-views
+http://railscasts.com/episodes/270-authentication-in-rails-3-1
+https://www.justinweiss.com/articles/how-rails-sessions-work/
+https://guides.rubyonrails.org/action_controller_overview.html#session
+https://guides.rubyonrails.org/action_controller_overview.html#controller-callbacks
+https://guides.rubyonrails.org/action_controller_advanced_topics.html#http-authentication
+https://guides.rubyonrails.org/active_record_querying.html
+https://guides.rubyonrails.org/association_basics.html
 
 
 https://domainr.com/

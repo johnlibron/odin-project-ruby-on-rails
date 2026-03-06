@@ -5,7 +5,11 @@
     def index
       # code to grab all posts so they can be
       # displayed in the Index view (index.html.erb)
-      @posts = Post.all
+      if params[:important] == true
+        @posts = Post.important.all
+      else
+        @posts = Post.all
+      end
     end
 
     def show
