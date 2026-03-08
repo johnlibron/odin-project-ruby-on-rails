@@ -26,4 +26,5 @@ Rails.application.routes.draw do
   # resources :users, except: [:index]
 
   get "/search", to: "cars#search", as: :search
+  resources :users
 end

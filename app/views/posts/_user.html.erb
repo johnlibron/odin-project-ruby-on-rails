@@ -1,0 +1,9 @@
+<%= form_with model: @user do |f| %>
+    <% 3.times do %>
+      <%= f.fields_for @user.shipping_addresses.build do |sub_form| %>
+          <%= sub_form.text_field :zip_code %>
+      <% end %>
+    <% end %>
+    <%= f.select(:author_id, @user_options) %>
+    <%= f.submit %>
+<% end %>

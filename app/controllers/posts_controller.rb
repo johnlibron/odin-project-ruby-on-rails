@@ -30,6 +30,8 @@
       # code to create an empty post and send the user
       # to the New view for it (new.html.erb), which will have a
       # form for creating the post
+      @user_options = User.all.map { |u| [ u.name, u.id ] }
+      @user = User.new
       @post = Post.new
     end
 
@@ -76,6 +78,6 @@
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.expect(post: [ :title, :body ])
+      params.expect(post: [ :title, :body, :author_id ])
     end
   end

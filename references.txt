@@ -16,6 +16,7 @@ https://guides.rubyonrails.org/action_controller_overview.html#controller-callba
 https://guides.rubyonrails.org/action_controller_advanced_topics.html#http-authentication
 https://guides.rubyonrails.org/active_record_querying.html
 https://guides.rubyonrails.org/association_basics.html
+http://en.wikibooks.org/wiki/Ruby_on_Rails/ActiveRecord/Callbacks
 
 
 https://domainr.com/

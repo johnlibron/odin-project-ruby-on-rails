@@ -1,6 +1,15 @@
 class UsersController < ApplicationController
   before_action :require_login
 
+  def index
+    @users = User.all
+
+    respond_to do |format|
+      # format.html
+      format.json { render json: @users }
+    end
+  end
+
   def new
     @user = User.new
   end
@@ -23,10 +32,10 @@ class UsersController < ApplicationController
   private
 
   def require_login
-    if current_user.logged_in?
-    # allow the user to perform the action they wanted
-    else
-      redirect_to login_path
-    end
+    # if current_user.logged_in?
+    # # allow the user to perform the action they wanted
+    # else
+    #   redirect_to login_path
+    # end
   end
 end

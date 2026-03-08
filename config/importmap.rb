@@ -8,3 +8,4 @@ pin_all_from "app/javascript/controllers", under: "controllers"
 
 pin "@github/hotkey", to: "@github--hotkey.js"
 pin "md5", preload: false
+pin "bootstrap", to: "bootstrap.bundle.min.js"
